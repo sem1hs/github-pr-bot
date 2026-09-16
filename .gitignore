@@ -3,7 +3,7 @@
 /bin/
 
 # Env
-.env
+.env*
 
 # Go
 vendor/
