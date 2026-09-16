@@ -1,0 +1,9 @@
+# Binaries
+*.exe
+/bin/
+
+# Env
+.env
+
+# Go
+vendor/
