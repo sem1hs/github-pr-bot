@@ -13,7 +13,10 @@ func main() {
 	cfg := config.Load()
 
 	// Gin router oluştur
-	router := router.Setup(cfg)
+	router, err := router.Setup(cfg)
+	if err != nil {
+		log.Fatalf("router kurulamadi: %v", err)
+	}
 
 	// Sunucuyu başlat
 	addr := ":" + cfg.Port

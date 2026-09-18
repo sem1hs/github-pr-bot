@@ -7,3 +7,7 @@
 
 # Go
 vendor/
+
+# Secrets (service account keys)
+secrets/
+*.json
